@@ -2,12 +2,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  color: #091747;
   padding: 1rem;
   text-align: center;
 }
@@ -25,7 +24,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: #091747;
 }
 
 nav a:hover {
@@ -35,14 +34,39 @@ nav a:hover {
 main {
   padding: 1rem;
   text-align: center;
+  color: #091747;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
+  color: #091747;
   padding: 1rem;
   text-align: center;
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+.pill-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 999px;
+  background-color: #BEFBFF;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.pill-button:hover {
+  background-color: #0056b3;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #BEFBFF;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
 }
