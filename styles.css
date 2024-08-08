@@ -98,11 +98,42 @@ main img {
   border-radius: 10px;
 }
 
+.passion-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+}
+
+.passion-content img {
+  max-width: 60%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.passion-content .pill-button {
+  background-color: #BEFBFF;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  margin-top: 1rem; /* Add some space between the image and button */
+  align-self: center; /* Ensure the button stays centered */
+}
+
+.passion-content .pill-button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
 footer {
   color: #091747;
   padding: 1rem;
   text-align: center;
-  position: fixed;
   width: 100%;
   bottom: 0;
 }
@@ -132,45 +163,4 @@ footer {
   font-size: 1rem;
   transition: background-color 0.3s;
   justify-content: right;
-}
-
-.next-passion-section {
-  background-color: #E0F7FA; /* Light blue background matching the screenshot */
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-.next-passion-content h2 {
-  color: #091747; /* Dark blue color */
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.next-passion-content p {
-  color: #091747;
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.next-passion-content img {
-  max-width: 60%;
-  height: auto;
-  object-fit: cover;
-  margin-bottom: 1rem;
-}
-
-.next-passion-content .pill-button {
-  background-color: #BEFBFF;
-  color: black;
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-}
-
-.next-passion-content .pill-button:hover {
-  background-color: #0056b3;
-  color: white;
 }
