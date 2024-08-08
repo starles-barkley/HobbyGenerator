@@ -242,3 +242,49 @@ footer {
   background-color: #0056b3;
   color: white;
 }
+
+.user-page .user-profile {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.user-page .profile-header {
+    display: flex;
+    align-items: center;
+}
+
+.user-page .user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.user-page .user-info h2 {
+    margin: 0;
+}
+
+.user-page .user-activities,
+.user-settings {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.user-page .user-activities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.user-page .user-activities ul li {
+    margin-bottom: 0.5rem;
+}
+
+.user-page .user-settings form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
