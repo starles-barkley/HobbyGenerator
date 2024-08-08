@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -34,13 +37,14 @@ nav a:hover {
 }
 
 main {
+  flex-grow: 1;
   padding: 1rem;
   color: #091747;
 }
 
 .content-wrapper {
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 1rem;
 }
@@ -53,12 +57,12 @@ main {
   color: #03B4C6;
   font-weight: bold;
   display: block;
-  margin-bottom: 0.2rem; /* Reduce space below the span */
+  margin-bottom: 0.2rem;
 }
 
 .main-content h2 {
   font-size: 40pt;
-  margin-top: 0; /* Remove any default margin on top of the heading */
+  margin-top: 0;
 }
 
 main img {
@@ -68,13 +72,13 @@ main img {
 }
 
 .discovery-section {
-  background-color: #BEFBFF; /* Light blue background */
+  background-color: #BEFBFF;
   text-align: center;
   padding: 2rem 1rem;
 }
 
 .discovery-content h2 {
-  color: #091747; /* Dark blue color */
+  color: #091747;
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
@@ -98,44 +102,69 @@ main img {
   border-radius: 10px;
 }
 
-.passion-content {
+footer {
+  background-color: #f1f1f1;
+  color: #091747;
+  padding: 2rem;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center the content horizontally */
 }
 
-.passion-content img {
-  max-width: 60%;
-  height: auto;
-  object-fit: cover;
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-left .footer-logo {
+  max-width: 100px;
   margin-bottom: 1rem;
 }
 
-.passion-content .pill-button {
-  background-color: #BEFBFF;
-  color: black;
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
+.footer-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h4 {
+  margin-bottom: 0.5rem;
   font-size: 1rem;
-  transition: background-color 0.3s;
-  margin-top: 1rem; /* Add some space between the image and button */
-  align-self: center; /* Ensure the button stays centered */
 }
 
-.passion-content .pill-button:hover {
-  background-color: #0056b3;
-  color: white;
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-footer {
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
   color: #091747;
-  padding: 1rem;
-  text-align: center;
-  width: 100%;
-  bottom: 0;
+}
+
+.footer-column ul li a:hover {
+  color: #007BFF;
 }
 
 .pill-button {
@@ -162,5 +191,54 @@ footer {
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s;
-  justify-content: right;
+}
+
+.passion-section {
+  background-color: #E0F7FA;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.passion-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.passion-content h2 {
+  color: #091747;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.passion-content p {
+  color: #091747;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.passion-content img {
+  max-width: 60%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.passion-content .pill-button {
+  background-color: #BEFBFF;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+  align-self: center;
+}
+
+.passion-content .pill-button:hover {
+  background-color: #0056b3;
+  color: white;
 }
