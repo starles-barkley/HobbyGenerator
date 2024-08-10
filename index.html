@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HobbyMate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <h1>HobbyMate</h1>
+            <nav>
+                <a href="#">Discover Hobby</a>
+                <a href="#">How it Works</a>
+                <a href="#">Join Us</a>
+                <a href="#">Get Inspired</a>
+            </nav>
+            <button id="loginBtn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#authModal">Sign Up</button>
+        </div>
+    </header>
+
+ <!-- Auth Modal -->
+ <div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="authModalLabel">Authentication</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="nav nav-tabs" id="authTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="signup-tab" data-bs-toggle="tab" href="#signup" role="tab" aria-controls="signup" aria-selected="true">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="login-tab" data-bs-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="false">Login</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="authTabContent">
+            <!-- Sign Up Form -->
+            <div class="tab-pane fade show active" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+              <form id="signupForm">
+                <div class="form-group">
+                  <label for="signupEmail">Email:</label>
+                  <input type="email" class="form-control" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                  <label for="signupPassword">Password:</label>
+                  <input type="password" class="form-control" id="signupPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </form>
+            </div>
+            <!-- Login Form -->
+            <div class="tab-pane fade" id="login" role="tabpanel" aria-labelledby="login-tab">
+              <form id="loginForm">
+                <div class="form-group">
+                  <label for="loginEmail">Email:</label>
+                  <input type="email" class="form-control" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                  <label for="loginPassword">Password:</label>
+                  <input type="password" class="form-control" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <main>
+        <section class="content-wrapper">
+            <div class="main-content">
+                <span>#1 for hobby discovery</span>
+                <h2>Find Your New Hobby Today</h2>
+                <p>Discover your next passion with HobbyMate - personalized hobby recommendations based on your interests.</p>
+                <button class="pill-button" data-bs-toggle="modal" data-bs-target="#authModal">Sign Up Today</button>
+            </div>
+            <img src="images/photography_camera.jpeg" alt="Professional Camera">
+        </section>
+    
+        <section class="discovery-section">
+            <div class="discovery-content">
+                <h2>The #1 Hobby Discovery Platform</h2>
+                <p>As recognized by top hobby enthusiasts and activity networks</p>
+            </div>
+            <div class="discovery-images">
+                <img src="images/camera_with_city.jpeg" alt="Hobby image 1">
+                <img src="images/hobby_emblem.jpeg" alt="Hobby image 2">
+                <img src="images/magical_camera.jpeg" alt="Hobby image 3">
+                <img src="images/hobby_emblem_1.jpeg" alt="Hobby image 4">
+                <img src="images/fancy_camera.jpeg" alt="Hobby image 5">
+            </div>
+        </section>
+
+        <section class="passion-section">
+            <div class="passion-content">
+                <h2>Discover Your Next Passion</h2>
+                <p>Explore personalized hobby suggestions tailored to your interests and passions.</p>
+                <img src="images/large_camera.jpeg" alt="Photographer taking a picture">
+                <button class="pill-button" data-bs-toggle="modal" data-bs-target="#authModal">Join Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2024 HobbyMate</p>
+            </div>
+            <nav class="footer-right" aria-label="Footer Navigation">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Customers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Jobs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>   
+
+     <!-- Scripts -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+     <script type="module" src="firebase.js"></script>
+     <script type="module" src="scripts.js"></script>
+</body>
+</html>
