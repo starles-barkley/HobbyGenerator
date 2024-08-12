@@ -178,11 +178,19 @@ footer {
   transition: background-color 0.3s;
 }
 
-.pill-button:hover {
+.pill-button:hover,
+#loginBtn:hover,
+#signUpBtn:hover,
+#signOutBtn:hover,
+#updateProfile:hover {
   background-color: #0056b3;
 }
 
-.button {
+.button,
+#loginBtn,
+#signUpBtn,
+#signOutBtn,
+#updateProfile {
   margin-left: 1rem;
   padding: 0.5rem 1rem;
   border: none;
@@ -287,4 +295,19 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.modal-body .form-group {
+  margin-bottom: 1rem;
+}
+
+.modal-body button {
+  margin-top: 1rem;
 }
