@@ -1,7 +1,7 @@
 // Import necessary Firebase modules
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+import { getFirestore, doc, collection, addDoc, getDocs, updateDoc, getDoc, query, where } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
 
 // Firebase configuration object
@@ -29,4 +29,5 @@ const db = getFirestore(app, 'hobbfinder');
 const auth = getAuth(app);
 
 // Export the necessary objects and functions for use in other files
-export { auth, db, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut };
+//export { auth, db, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut };
+export { auth, db, doc, collection, addDoc, getDocs, updateDoc, getDoc, query, where, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut };

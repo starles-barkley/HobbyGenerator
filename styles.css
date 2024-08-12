@@ -128,7 +128,7 @@ footer {
   align-items: center;
 }
 
-.footer-left .footer-logo {
+.footer-left .footer-logo { 
   max-width: 100px;
   margin-bottom: 1rem;
 }
@@ -176,7 +176,7 @@ footer {
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s;
-}
+}   
 
 .pill-button:hover {
   background-color: #0056b3;
@@ -251,7 +251,7 @@ body {
   }
   
   header {
-    background-color: white;
+    background-color:   white;
     color: black;
     padding: 20px;
   }
@@ -317,4 +317,35 @@ body {
   .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
+
+  .hobby-card .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.hobby-card .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hobby-description {
+    margin-top: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.hobby-description.expanded {
+    max-height: 500px; /* Adjust this value as necessary */
+    overflow: visible;
+}
+
+.saved-hobby .card {
+    border: 2px solid #007bff; /* Blue outline to indicate it's saved */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Optional: Add a shadow for better visibility */
+}
+
+.saved-hobby .card .btn {
+    background-color: #6c757d; /* Grey out the button */
+    cursor: not-allowed; /* Change cursor to indicate the button is not clickable */
+}

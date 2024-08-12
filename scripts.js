@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         window.location.href = "adminpage.html"; // Redirect to admin page
                     } else {
                         console.log("Redirecting to hobby search page...");
-                        window.location.href = "hobbysearch.html"; // Redirect to hobby search page
+                        window.location.href = "userpage.html"; // Redirect to hobby search page
                     }
                 }
             } else {
@@ -100,7 +100,7 @@ const loginForm = document.getElementById('loginForm');
     signupForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const email = document.getElementById('signupEmail').value;
-      const password = document.getElementElementById('signupPassword').value;
+      const password = document.getElementById('signupPassword').value;
   
       try {
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
@@ -109,6 +109,9 @@ const loginForm = document.getElementById('loginForm');
           email: userCredential.user.email,
         });
         alert('User signed up successfully!');
+        
+        // Redirect to userprofile.html after signup
+        window.location.href = 'userpage.html';
       } catch (error) {
         console.error('Error signing up: ', error);
         alert('Error: ' + error.message);
