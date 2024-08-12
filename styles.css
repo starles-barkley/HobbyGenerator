@@ -181,6 +181,7 @@ footer {
 .pill-button:hover,
 #loginBtn:hover,
 #signUpBtn:hover,
+#formBtn:hover,
 #signOutBtn:hover,
 #updateProfile:hover {
   background-color: #0056b3;
@@ -190,6 +191,7 @@ footer {
 #loginBtn,
 #signUpBtn,
 #signOutBtn,
+#formBtn,
 #updateProfile {
   margin-left: 1rem;
   padding: 0.5rem 1rem;
@@ -311,3 +313,12 @@ footer {
 .modal-body button {
   margin-top: 1rem;
 }
+
+.modal-title,
+#formBtn {
+  width: 95%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
