@@ -128,7 +128,7 @@ footer {
   align-items: center;
 }
 
-.footer-left .footer-logo { 
+.footer-left .footer-logo {
   max-width: 100px;
   margin-bottom: 1rem;
 }
@@ -176,7 +176,7 @@ footer {
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s;
-}   
+}
 
 .pill-button:hover {
   background-color: #0056b3;
@@ -243,109 +243,48 @@ footer {
   color: white;
 }
 
+.user-page .user-profile {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
 
-
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-  
-  header {
-    background-color:   white;
-    color: black;
-    padding: 20px;
-  }
-  
-  button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transform: scale(0.8);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  
-  .popup.open {
+.user-page .profile-header {
     display: flex;
-    opacity: 1;
-    transform: scale(1);
-  }
-  
-  .popup-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: left;
-  }
-  
-  .close-btn {
-    background: none;
-    border: none;
-    font-size: 20px;
-    float: right;
-    cursor: pointer;
-  }
-  
-  .word-btn {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
-  }
-  
-  .word-btn.active {
-    background-color: #007bff;
-    color: white;
-    border: 1px solid #007bff;
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .hobby-card .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    align-items: center;
 }
 
-.hobby-card .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+.user-page .user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1rem;
 }
 
-.hobby-description {
-    margin-top: 15px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+.user-page .user-info h2 {
+    margin: 0;
 }
 
-.hobby-description.expanded {
-    max-height: 500px; /* Adjust this value as necessary */
-    overflow: visible;
+.user-page .user-activities,
+.user-settings {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
 }
 
-.saved-hobby .card {
-    border: 2px solid #007bff; /* Blue outline to indicate it's saved */
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Optional: Add a shadow for better visibility */
+.user-page .user-activities ul {
+    list-style: none;
+    padding: 0;
 }
 
-.saved-hobby .card .btn {
-    background-color: #6c757d; /* Grey out the button */
-    cursor: not-allowed; /* Change cursor to indicate the button is not clickable */
+.user-page .user-activities ul li {
+    margin-bottom: 0.5rem;
+}
+
+.user-page .user-settings form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
