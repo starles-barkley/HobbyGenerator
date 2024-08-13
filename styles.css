@@ -192,7 +192,8 @@ footer {
 #signUpBtn,
 #signOutBtn,
 #formBtn,
-#updateProfile {
+#updateProfile,
+.add-to-profile-btn{
   margin-left: 1rem;
   padding: 0.5rem 1rem;
   border: none;
@@ -375,4 +376,3 @@ footer {
   margin-bottom: 15px;
   border-radius: 10px;
 }
-
