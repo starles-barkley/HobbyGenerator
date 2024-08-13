@@ -346,9 +346,31 @@ footer {
   transition: background-color 0.3s;
   margin-top: 1rem;
   align-self: center;
+  display: flex;
+  justify-content: center;
+  width: 25%;
 }
 
 #discoverHobbies .btn:hover,
 #discoverHobbies .btn-success:hover {
   background-color: #0056b3;
+}
+
+#currentHobbies .card {
+  width: fit-content;
+}
+
+#currentHobbies .card {
+  width: max-content;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
 }
