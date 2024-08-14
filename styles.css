@@ -1,427 +1,189 @@
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "San Francisco", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-  
-  header {
-    color: #091747;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav {
-    display: flex;
-    gap: 1rem;
-    flex-grow: 1;
-    justify-content: right;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #091747;
-  }
-  
-  nav a:hover {
-    color: #007BFF;
-  }
-  
-  main {
-    flex-grow: 1;
-    padding: 1rem;
-    color: #091747;
-  }
-  
-  .content-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  
-  .main-content {
-    max-width: 45%;
-  }
-  
-  .main-content span {
-    color: #03B4C6;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 0.2rem;
-  }
-  
-  .main-content h2 {
-    font-size: 40pt;
-    margin-top: 0;
-  }
-  
-  main img {
-    max-width: 40%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .discovery-section {
-    background-color: #BEFBFF;
-    text-align: center;
-    padding: 2rem 1rem;
-  }
-  
-  .discovery-content h2 {
-    color: #091747;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .discovery-content p {
-    color: #091747;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .discovery-images {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .discovery-images img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  footer {
-    background-color: #f1f1f1;
-    color: #091747;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .footer-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-  }
-  
-  .footer-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .footer-left .footer-logo {
-    max-width: 100px;
-    margin-bottom: 1rem;
-  }
-  
-  .footer-right {
-    display: flex;
-    gap: 2rem;
-  }
-  
-  .footer-column {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .footer-column h4 {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-column ul li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .footer-column ul li a {
-    text-decoration: none;
-    color: #091747;
-  }
-  
-  .footer-column ul li a:hover {
-    color: #007BFF;
-  }
-  
-  .pill-button {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 999px;
-    background-color: #BEFBFF;
-    color: black;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-  }
-  
-  .pill-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .button {
-    margin-left: 1rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: #BEFBFF;
-    color: black;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-  }
-  
-  .passion-section {
-    background-color: #E0F7FA;
-    text-align: center;
-    padding: 2rem 1rem;
-  }
-  
-  .passion-content {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .passion-content h2 {
-    color: #091747;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .passion-content p {
-    color: #091747;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .passion-content img {
-    max-width: 60%;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 1rem;
-  }
-  
-  .passion-content .pill-button {
-    background-color: #BEFBFF;
-    color: black;
-    padding: 0.5rem 1rem;
-    border-radius: 999px;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-    margin-top: 1rem;
-    align-self: center;
-  }
-  
-  .passion-content .pill-button:hover {
-    background-color: #0056b3;
-    color: white;
-  }
-  
-  .user-page .user-profile {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 10px;
-  }
-  
-  .user-page .profile-header {
-      display: flex;
-      align-items: center;
-  }
-  
-  .user-page .user-avatar {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-right: 1rem;
-  }
-  
-  .user-page .user-info h2 {
-      margin: 0;
-  }
-  
-  .user-page .user-activities,
-  .user-settings {
-      background-color: #f9f9f9;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      border-radius: 10px;
-  }
-  
-  .user-page .user-activities ul {
-      list-style: none;
-      padding: 0;
-  }
-  
-  .user-page .user-activities ul li {
-      margin-bottom: 0.5rem;
-  }
-  
-  .user-page .user-settings form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-  }
-
-  #hobbyTags {
-    display: grid;
-    color: #E0F7FA;
-    grid-template-columns: repeat(9, 1fr); 
-    gap: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "San Francisco", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.col-auto {
-    display: flex;
-    justify-content: center;
+header {
+  color: #091747;
+  padding: 1rem;
+  text-align: center;
 }
 
-#hobbyTagsList, #hobbyTags {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, auto));
-    gap: 5px;
-    width: 100%;
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#hobbyTagsList button, #hobbyTags button {
-    padding: 8px 12px;
-    max-width: 100%;
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-grow: 1;
+  justify-content: right;
 }
 
-.saved-hobby .card {
-    border: 2px solid #37ff00;
-    box-shadow: 0 0 10px #37ff00
-}
-.hobby-card .btn.btn-primary.add-to-profile-btn {
-    background-color: #BEFBFF !important;
-    color: black !important;
-    outline: none;        
-  }
-  .hobby-card .card {
-    transition: transform 0.3s ease;
-    outline: #052c65 solid 1px;
+nav a {
+  text-decoration: none;
+  color: #091747;
 }
 
-.hobby-card .card:hover {
-    transform: scale(1.05);
-    z-index: 1;
+nav a:hover {
+  color: #007BFF;
 }
 
-.hobby-card .fas.fa-star,
-.hobby-card .far.fa-star {
-    color: #052c65 !important;
-}
-.hobby-card .badge {
-    background-color: #BEFBFF !important;
-    color: black !important;
-    border: 1px solid black;
+main {
+  flex-grow: 1;
+  padding: 1rem;
+  color: #091747;
 }
 
-/* Modal styles */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 2000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%; 
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+.content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
-.modal-content {
-    background-color: #fefefe;
-    margin: 0% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 75%;
-    max-width: 1200px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    position: relative;
+.main-content {
+  max-width: 45%;
 }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+.main-content span {
+  color: #03B4C6;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.2rem;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+.main-content h2 {
+  font-size: 40pt;
+  margin-top: 0;
 }
 
-/* Change the settings based on device size, I think this should look good on all devices */
-@media screen and (max-width: 908px) {
-    .modal-content {
-        width: 90%;
-        margin: 20% auto;
-    }
+main img {
+  max-width: 40%;
+  height: auto;
+  object-fit: cover;
 }
 
-.how-it-works-section {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
+.discovery-section {
+  background-color: #BEFBFF;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
-.how-it-works-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #007BFF;
+.discovery-content h2 {
+  color: #091747;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-.how-it-works-steps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
+.discovery-content p {
+  color: #091747;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
-.pill-button:hover,
-#loginBtn:hover,
-#signUpBtn:hover,
-#formBtn:hover,
-#signOutBtn:hover,
-#updateProfile:hover {
+.discovery-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.discovery-images img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #f1f1f1;
+  color: #091747;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-left .footer-logo {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.footer-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #091747;
+}
+
+.footer-column ul li a:hover {
+  color: #007BFF;
+}
+
+.pill-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 999px;
+  background-color: #BEFBFF;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.pill-button:hover {
   background-color: #0056b3;
 }
 
-.button,
-#loginBtn,
-#signUpBtn,
-#signOutBtn,
-#formBtn,
-#updateProfile,
-.add-to-profile-btn{
+.button {
   margin-left: 1rem;
   padding: 0.5rem 1rem;
   border: none;
@@ -432,119 +194,39 @@ body {
   transition: background-color 0.3s;
 }
 
-.how-it-works-step {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 250px;
-    transition: transform 0.3s ease-in-out;
+.passion-section {
+  background-color: #E0F7FA;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
-.how-it-works-step:hover {
-    transform: translateY(-10px);
-}
-
-.how-it-works-step i {
-    font-size: 3rem;
-    color: #03B4C6;
-    margin-bottom: 15px;
-}
-
-.how-it-works-step h4 {
-    font-size: 1.25rem;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-
-.how-it-works-step p {
-    font-size: 1rem;
-    color: #666;
-}
-
-h2.text-center.mb-4 {
-    color: #BEFBFF;
-}
-
-.btn.signOutBtn {
-    color: #BEFBFF;
-}
-
-.custom-hobby-tag {
-    background-color: #BFEFFF !important;
-    color: #000;
-}
-
-.custom-discover-tag {
-    background-color: #BFEFFF !important;
-    color: #000;
-    border-color: #BFEFFF !important;
-}
-
-.custom-discover-tag.active {
-    background-color: #091747 !important;
-    color: #FFF;
-    border-color: #091747 !important;
-}
-
-.custom-button {
-    background-color: #BFEFFF;
-    border-color: #BFEFFF;
-    color: #000;
-}
-
-.custom-button:hover {
-    background-color: #B0E5F6;
-    border-color: #B0E5F6;
-}
-.btn btn-success mt-3 {
-    color:#BFEFFF;
-}
-#userInfoForm {
-    max-width: 400px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-#userInfoForm .form-control {
-    width: 100%;
-}
-
-#userInfoForm .btn-primary {
-    background-color: #BFEFFF;
-    border-color: #BFEFFF;
-    color: #000;
-    display: block;
-    width: 100%;
-    text-align: center;
-}
-
-.modal-dialog {
+.passion-content {
+  text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
 }
 
-.modal-body .form-group {
+.passion-content h2 {
+  color: #091747;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.passion-content p {
+  color: #091747;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.passion-content img {
+  max-width: 60%;
+  height: auto;
+  object-fit: cover;
   margin-bottom: 1rem;
 }
 
-.modal-body button {
-  margin-top: 1rem;
-}
-
-.modal-title,
-#formBtn {
-  width: 95%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-
-#discoverHobbies .btn {
+.passion-content .pill-button {
   background-color: #BEFBFF;
   color: black;
   padding: 0.5rem 1rem;
@@ -557,43 +239,259 @@ h2.text-center.mb-4 {
   align-self: center;
 }
 
-#discoverHobbies .btn-success {
-  background-color: #30b2bb;
-  color: black;
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-  margin-top: 1rem;
-  align-self: center;
+.passion-content .pill-button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.user-page .user-profile {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.user-page .profile-header {
+    display: flex;
+    align-items: center;
+}
+
+.user-page .user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.user-page .user-info h2 {
+    margin: 0;
+}
+
+.user-page .user-activities,
+.user-settings {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.user-page .user-activities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.user-page .user-activities ul li {
+    margin-bottom: 0.5rem;
+}
+
+.user-page .user-settings form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#hobbyTags {
+  display: grid;
+  color: #E0F7FA;
+  grid-template-columns: repeat(9, 1fr); 
+  gap: 10px;
+}
+
+.col-auto {
   display: flex;
   justify-content: center;
-  width: 25%;
 }
 
-#discoverHobbies .btn:hover,
-#discoverHobbies .btn-success:hover {
-  background-color: #0056b3;
+#hobbyTagsList, #hobbyTags {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+  gap: 5px;
+  width: 100%;
 }
 
-
-#currentHobbies .card {
-  width: fit-content;
-}
-
-#currentHobbies .card {
-  width: max-content;
-}
-
-.card-body {
-  text-align: center;
-}
-
-.card img {
+#hobbyTagsList button, #hobbyTags button {
+  padding: 8px 12px;
   max-width: 100%;
-  height: auto;
-  margin-bottom: 15px;
+}
+
+.saved-hobby .card {
+  border: 2px solid #37ff00;
+  box-shadow: 0 0 10px #37ff00
+}
+.hobby-card .btn.btn-primary.add-to-profile-btn {
+  background-color: #BEFBFF !important;
+  color: black !important;
+  outline: none;        
+}
+.hobby-card .card {
+  transition: transform 0.3s ease;
+  outline: #052c65 solid 1px;
+}
+
+.hobby-card .card:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.hobby-card .fas.fa-star,
+.hobby-card .far.fa-star {
+  color: #052c65 !important;
+}
+.hobby-card .badge {
+  background-color: #BEFBFF !important;
+  color: black !important;
+  border: 1px solid black;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 0% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 75%;
+  max-width: 1200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Change the settings based on device size, I think this should look good on all devices */
+@media screen and (max-width: 908px) {
+  .modal-content {
+      width: 90%;
+      margin: 20% auto;
+  }
+}
+
+.how-it-works-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.how-it-works-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #007BFF;
+}
+
+.how-it-works-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.how-it-works-step {
+  background: white;
+  padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.how-it-works-step:hover {
+  transform: translateY(-10px);
+}
+
+.how-it-works-step i {
+  font-size: 3rem;
+  color: #03B4C6;
+  margin-bottom: 15px;
+}
+
+.how-it-works-step h4 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+
+.how-it-works-step p {
+  font-size: 1rem;
+  color: #666;
+}
+
+h2.text-center.mb-4 {
+  color: #BEFBFF;
+}
+
+.btn.signOutBtn {
+  color: #BEFBFF;
+}
+
+.custom-hobby-tag {
+  background-color: #BFEFFF !important;
+  color: #000;
+}
+
+.custom-discover-tag {
+  background-color: #BFEFFF !important;
+  color: #000;
+  border-color: #BFEFFF !important;
+}
+
+.custom-discover-tag.active {
+  background-color: #091747 !important;
+  color: #FFF;
+  border-color: #091747 !important;
+}
+
+.custom-button {
+  background-color: #BFEFFF;
+  border-color: #BFEFFF;
+  color: #000;
+}
+
+.custom-button:hover {
+  background-color: #B0E5F6;
+  border-color: #B0E5F6;
+}
+.btn btn-success mt-3 {
+  color:#BFEFFF;
+}
+#userInfoForm {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#userInfoForm .form-control {
+  width: 100%;
+}
+
+#userInfoForm .btn-primary {
+  background-color: #BFEFFF;
+  border-color: #BFEFFF;
+  color: #000;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
