@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile - HobbyMate</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,35 +12,33 @@
         <div class="nav-bar">
             <h1>HobbyMate</h1>
             <nav>
+                <a href="#">Discover Hobby</a>
+                <a href="#">How it Works</a>
+                <a href="#">Join Us</a>
+                <a href="#">Get Inspired</a>
             </nav>
-            <button id="signOutBtn" class="btn" style="background-color: #BFEFFF; color: black;">Sign Out</button>
-
+            <button id="signOutBtn" class="btn btn-danger">Sign Out</button>
         </div>
     </header>
 
     <main class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-4 d-flex flex-column align-items-center">
+        <div class="row">
+            <div class="col-md-4">
                 <!-- Profile Photo -->
                 <div class="text-center">
-                    <img src="images/fallout_vault_boy.jpeg" alt="Profile Photo" class="rounded-circle" style="width: 150px; height: 150px;">
+                    <img src="images/default_profile.png" alt="Profile Photo" class="rounded-circle" style="width: 150px; height: 150px;">
                     <input type="file" class="form-control mt-3" id="profilePhotoInput" accept="image/*">
                 </div>
-                
-                <!-- First Name Last Name Display -->
-                <div id="userFullName" class="mt-3">
-                    <h5 class="text-center"></h5>
-                </div>
-                
-                <!-- User Hobby Tags Section -->
-                <section id="userHobbyTagsSection" class="text-center mt-4">
-                    <h4>Your Current Interests</h4>
-                    <div id="userHobbyTags"></div>
-                </section>
+                       <!-- User Hobby Tags Section -->
+        <section id="userHobbyTagsSection">
+            <h4>Your Current Interests</h4>
+            <div id="userHobbyTags"></div>
+        </section>
+        
             </div>
-            <div class="col-md-6 d-flex flex-column align-items-center">
+            <div class="col-md-8">
                 <!-- User Information Form -->
-                <form id="userInfoForm" class="w-100">
+                <form id="userInfoForm">
                     <div class="mb-3">
                         <label for="firstName" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="firstName" required>
@@ -54,24 +51,23 @@
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="email" readonly>
                     </div>
-                    <button id="updateProfile" type="submit" class="btn btn-primary">Update Profile</button>
+                    <button type="submit" class="btn btn-primary">Update Profile</button>
                 </form>
             </div>
         </div>
-        <hr class="my-4">
-        <!-- Discover New Hobbies Section -->
-        <section id="discoverHobbiesSection" class="mt-5 text-center">
+        <hr>
+ 
+        <section id="discoverHobbiesSection" class="mt-5">
             <h3>Discover New Hobbies</h3>
-            <div id="discoverHobbies" class="d-flex justify-content-center flex-wrap"></div>
+            <div id="discoverHobbies"></div>
         </section>
-        <hr class="my-4">
-        <!-- Current Hobbies Section -->
+
         <section id="currentHobbiesSection" class="mt-5">
-            <h3 class="text-center">Current Hobbies</h3>
-            <div id="currentHobbies" class="row justify-content-center"></div>
+        <h3>Current Hobbies</h3>
+        <div id="currentHobbies" class="row"></div>
         </section>
+    </div>
     </main>
-    
     <footer class="footer-section mt-5">
         <div class="footer-content">
             <div class="footer-left">
