@@ -12,66 +12,64 @@
         <div class="nav-bar">
             <h1>HobbyMate</h1>
             <nav>
-                <a href="#">Discover Hobby</a>
-                <a href="#">How it Works</a>
-                <a href="#">Join Us</a>
-                <a href="#">Get Inspired</a>
+                <a href="#discovery-section">Discover Hobby</a>
+                <a href="#how-it-works-section">How it Works</a>
             </nav>
-            <button id="loginBtn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#authModal">Sign Up</button>
+            <button id="loginBtn" class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#authModal">Sign Up</button>
         </div>
     </header>
 
- <!-- Auth Modal -->
- <div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="authModalLabel">Authentication</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <ul class="nav nav-tabs" id="authTab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="signup-tab" data-bs-toggle="tab" href="#signup" role="tab" aria-controls="signup" aria-selected="true">Sign Up</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="login-tab" data-bs-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="false">Login</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="authTabContent">
-            <!-- Sign Up Form -->
-            <div class="tab-pane fade show active" id="signup" role="tabpanel" aria-labelledby="signup-tab">
-              <form id="signupForm">
-                <div class="form-group">
-                  <label for="signupEmail">Email:</label>
-                  <input type="email" class="form-control" id="signupEmail" required>
+    <!-- Auth Modal -->
+    <div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="authModalLabel">Authentication</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="form-group">
-                  <label for="signupPassword">Password:</label>
-                  <input type="password" class="form-control" id="signupPassword" required>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" id="authTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="signup-tab" data-bs-toggle="tab" href="#signup" role="tab" aria-controls="signup" aria-selected="true">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="login-tab" data-bs-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="false">Login</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="authTabContent">
+                        <!-- Sign Up Form -->
+                        <div class="tab-pane fade show active" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                            <form id="signupForm">
+                                <div class="form-group">
+                                    <label for="signupEmail">Email:</label>
+                                    <input type="email" class="form-control" id="signupEmail" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="signupPassword">Password:</label>
+                                    <input type="password" class="form-control" id="signupPassword" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-3">Sign Up</button>
+                            </form>
+                        </div>
+                        <!-- Login Form -->
+                        <div class="tab-pane fade" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <form id="loginForm">
+                                <div class="form-group">
+                                    <label for="loginEmail">Email:</label>
+                                    <input type="email" class="form-control" id="loginEmail" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="loginPassword">Password:</label>
+                                    <input type="password" class="form-control" id="loginPassword" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-3">Login</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Sign Up</button>
-              </form>
             </div>
-            <!-- Login Form -->
-            <div class="tab-pane fade" id="login" role="tabpanel" aria-labelledby="login-tab">
-              <form id="loginForm">
-                <div class="form-group">
-                  <label for="loginEmail">Email:</label>
-                  <input type="email" class="form-control" id="loginEmail" required>
-                </div>
-                <div class="form-group">
-                  <label for="loginPassword">Password:</label>
-                  <input type="password" class="form-control" id="loginPassword" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Login</button>
-              </form>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 
     <main>
         <section class="content-wrapper">
@@ -98,12 +96,41 @@
             </div>
         </section>
 
+        <!-- How it Works Section -->
+        <section id="how-it-works-section" class="how-it-works-section py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">How It Works</h2>
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <i class="fas fa-user-plus fa-3x mb-3"></i>
+                        <h4>Sign Up</h4>
+                        <p>Create an account by providing your email and a password.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fas fa-user-edit fa-3x mb-3"></i>
+                        <h4>Complete Your Profile</h4>
+                        <p>Fill out your profile details to help us tailor the best hobby recommendations for you.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fas fa-key fa-3x mb-3"></i>
+                        <h4>Select Keywords</h4>
+                        <p>You'll be prompted with a series of randomly generated words. Choose the ones that resonate with you.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fas fa-compass fa-3x mb-3"></i>
+                        <h4>Discover Hobbies</h4>
+                        <p>Based on your selected words, HobbyMate will suggest hobbies that align with your interests.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="passion-section">
             <div class="passion-content">
                 <h2>Discover Your Next Passion</h2>
                 <p>Explore personalized hobby suggestions tailored to your interests and passions.</p>
                 <img src="images/large_camera.jpeg" alt="Photographer taking a picture">
-                <button class="pill-button" data-bs-toggle="modal" data-bs-target="#authModal">Join Now</button>
+                <button class="pill-button mt-4" data-bs-toggle="modal" data-bs-target="#authModal">Join Now</button>
             </div>
         </section>
     </main>
