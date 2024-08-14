@@ -406,32 +406,6 @@ body {
     gap: 30px;
 }
 
-.pill-button:hover,
-#loginBtn:hover,
-#signUpBtn:hover,
-#formBtn:hover,
-#signOutBtn:hover,
-#updateProfile:hover {
-  background-color: #0056b3;
-}
-
-.button,
-#loginBtn,
-#signUpBtn,
-#signOutBtn,
-#formBtn,
-#updateProfile,
-.add-to-profile-btn{
-  margin-left: 1rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  background-color: #BEFBFF;
-  color: black;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-}
-
 .how-it-works-step {
     background: white;
     padding: 20px;
@@ -519,81 +493,4 @@ h2.text-center.mb-4 {
     display: block;
     width: 100%;
     text-align: center;
-}
-
-.modal-dialog {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-.modal-body .form-group {
-  margin-bottom: 1rem;
-}
-
-.modal-body button {
-  margin-top: 1rem;
-}
-
-.modal-title,
-#formBtn {
-  width: 95%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-
-#discoverHobbies .btn {
-  background-color: #BEFBFF;
-  color: black;
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-  margin-top: 1rem;
-  align-self: center;
-}
-
-#discoverHobbies .btn-success {
-  background-color: #30b2bb;
-  color: black;
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-  margin-top: 1rem;
-  align-self: center;
-  display: flex;
-  justify-content: center;
-  width: 25%;
-}
-
-#discoverHobbies .btn:hover,
-#discoverHobbies .btn-success:hover {
-  background-color: #0056b3;
-}
-
-
-#currentHobbies .card {
-  width: fit-content;
-}
-
-#currentHobbies .card {
-  width: max-content;
-}
-
-.card-body {
-  text-align: center;
-}
-
-.card img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 15px;
-  border-radius: 10px;
 }
