@@ -108,8 +108,6 @@ const loginForm = document.getElementById('loginForm');
           uid: userCredential.user.uid,
           email: userCredential.user.email,
         });
-        alert('User signed up successfully!');
-        
         // Redirect to userprofile.html after signup
         window.location.href = 'userpage.html';
       } catch (error) {
