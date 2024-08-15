@@ -144,6 +144,8 @@ const storage = getStorage(app);
 ## Notes
 We wanted to add a `Projects` section to the user profile that would allow them to create projects under each hobby they have added to their profile to give the WebApp more depth, but we never got around to it. 
 
+Additionally, there are a few extra files in this repository that aren't required / used for the final product. We've left them in the repository to show the growing & learning pains we've had along the way. In production, it would have been cleaned up. Also, the cloudflare project directory exists only to make it easy to upload and track the changes to the Cloudflare pages as changes are made.
+
 
 ### Authors
 - [Benjamin Carter](https://www.github.com/bcart01v)
