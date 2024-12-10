@@ -141,6 +141,11 @@ const storage = getStorage(app);
 ## Easter-Egg Count
 1
 
+## Screenshots
+
+![Screenshot 1](images/Screenshot%201.png)
+![Screenshot 2](images/Screenshot%202.png)
+
 ## Notes
 We wanted to add a `Projects` section to the user profile that would allow them to create projects under each hobby they have added to their profile to give the WebApp more depth, but we never got around to it. 
 
